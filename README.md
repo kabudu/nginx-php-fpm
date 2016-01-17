@@ -13,7 +13,7 @@ The Docker hub build can be found here: https://registry.hub.docker.com/u/boxedc
 
 ## Nginx versions
 * Stable Version: **1.8.0**
-* Latest = Stable Version
+* Latest = **1.8.0**
 
 ## Installation
 
