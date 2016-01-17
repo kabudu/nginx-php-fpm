@@ -63,4 +63,5 @@ RUN chown -Rf nginx.nginx /usr/share/nginx/html/
 EXPOSE 443
 EXPOSE 80
 
+# Run entrypoint script
 CMD ["/bin/bash", "/entrypoint.sh"]
