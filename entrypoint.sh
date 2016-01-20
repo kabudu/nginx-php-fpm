@@ -5,7 +5,7 @@ mkdir -p -m 0700 /root/.ssh
 echo -e "Host *\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
 
 # Display PHP error's or not
-if [[ "$ERRORS" != "1" ]] ; then
+if [[ "$ERRORS" != "0" ]] ; then
   sed -i -e "s/error_reporting =.*=/error_reporting = E_ALL/g" /etc/php/php.ini
   sed -i -e "s/display_errors =.*/display_errors = On/g" /etc/php/php.ini
 fi
