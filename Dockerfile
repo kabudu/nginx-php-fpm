@@ -5,7 +5,7 @@ FROM gliderlabs/alpine:3.3
 MAINTAINER Kamba Abudu <hello@boxedcode.com>
 
 # Install software requirements
-RUN BUILD_PACKAGES="vim bash supervisor nginx php-fpm php-opcache php-curl php-intl php-mcrypt php-sqlite3 php-ctype php-json" && \
+RUN BUILD_PACKAGES="vim bash supervisor nginx php-fpm php-opcache php-curl php-intl php-mcrypt php-sqlite3 php-ctype php-json php-openssl php-dom php-cli" && \
 apk-install $BUILD_PACKAGES
 
 # Replace the default nginx.conf file
